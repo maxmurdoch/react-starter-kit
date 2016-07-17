@@ -1,0 +1,51 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "babel"
+  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true,
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "arrow-parens": 2,
+    "arrow-spacing": 2,
+    "babel/arrow-parens": 2,
+    "babel/object-curly-spacing": 0,
+    "block-scoped-var": 2,
+    "camelcase": [2, {properties: "never"}],
+    "comma-dangle": [2, "always-multiline"],
+    "consistent-return": 2,
+    "curly": [2, "multi-line"],
+    "eqeqeq": [2, "allow-null"],
+    "key-spacing": 0,
+    "keyword-spacing": [2, {"before": true, "after": true}],
+    "new-cap": 2,
+    "no-console": 0,
+    "no-multiple-empty-lines": [2, { max: 2 }],
+    "no-process-exit": 0,
+    "no-shadow": 2,
+    "no-underscore-dangle": 0,
+    "no-unreachable": 2,
+    "no-unused-expressions": 0,
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "no-useless-concat": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "one-var": [2, "never"],
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
+    "semi": [2, "always"],
+  }
+}
